@@ -55,7 +55,7 @@ while run:
     count += 1
     if count == range_count:
         break
-        print('STOP', count)
+print('STOP', count)
 
 
 # Циклы For
@@ -119,4 +119,4 @@ for item in range(0, 20):
     if 7 < item < 12:
         print('If_item =', item)
         continue
-    print('End_iteration =', item)
+print('End_iteration =', item)

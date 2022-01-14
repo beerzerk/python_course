@@ -120,9 +120,13 @@ b_item_result_multi = b_item_t * b_item_f
 #  55. Вывести b_item_result_multi в консоль.
 print('55. Вывести b_item_result_multi:', b_item_result_multi)
 #  56. Создать переменную b_item_result_division и присвоить деление b_item_t и b_item_f
-b_item_result_division = b_item_t / b_item_f
+try:
+    b_item_result_division = b_item_t / b_item_f
+    print('57. Вывести b_item_result_division:', b_item_result_division)
+except ZeroDivisionError:
+    print('57.Вывести b_item_result_division: Error: Zero Division')
 #  57. Вывести b_item_result_division в консоль. (Получить ошибку)
-print('57. Вывести b_item_result_division:', b_item_result_division)
+# print('57. Вывести b_item_result_division:', b_item_result_division)
 #  58. Создать переменную b_item_1_int и присвоить явное приведение b_item_t к int
 b_item_1_int = int(b_item_t)
 #  59. Вывести b_item_1_int в консоль.
