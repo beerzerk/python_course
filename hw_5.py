@@ -6,23 +6,44 @@
 list = []
 for i in range(0, 71):
     list.append(i)
-print(list)
+print('1. Список целых чисел:\n', list)
 
 # 2)	Написать скрипт который в создаст список целых чётных чисел.
 even_list = []
 for i in range(2, 150, 2):
     even_list.append(i)
-print(even_list)
+print('2. Список целых чётных чисел:\n', even_list)
 
 # 3)	Написать скрипт который в создаст список целых нечётных чисел.
 odd_list = []
 for i in range(1, 150, 2):
     odd_list.append(i)
-print(odd_list)
+print('3. Список целых нечётных чисел:\n', odd_list)
 
 # 4)	Написать скрипт который из списка целых чисел выведет чётные числа.
-odd_numbers= []
+even_numbers = []
 for i in list:
-    if list[i] // 2 == 0:
+    if list[i] % 2 == 0:
+        even_numbers.append(i)
+        continue
+print('4. Чётные числа из списка:\n', even_numbers)
+
+# 5)	Написать скрипт который из списка целых чисел выведет нечётные числа.
+odd_numbers = []
+for i in list:
+    if list[i] % 2 != 0:
         odd_numbers.append(i)
-print(odd_numbers)
+        continue
+print('5. Нечётные числа из списка:\n', odd_numbers)
+
+# 6)	Написать скрипт который из списка целых чисел выведет чётные числа которые делятся на 5 без остатка.
+five_numbers = []
+for i in list:
+    if list[i] % 5 == 0 and list[i] % 2 == 0:
+        five_numbers.append(i)
+        continue
+print('6. Чётные числа из списка, которые делятся на 5 без остатка:\n', five_numbers)
+
+# 7)	Написать скрипт который из списка целых чисел выведет количество чётных чисел которые делятся на 5 без остатка.
+print('7. Количество чётных чисел из списка, которые делятся на 5 без остатка:\n', len(five_numbers))
+
